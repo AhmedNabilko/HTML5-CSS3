@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Frozed Video</h1>
+    <main>
+        <video src="./video/frozen.mp4" width="400px" id="frozen" poster="./image/frozen.jpg"></video>
+        <div>
+            <progress type="range" id="time-line" value="0">
+
+            </progress>
+
+            <label id="current-time">
+                00:00
+            </label> / <label id="total-time">00:00</label>
+        </div>
+
+
+        <section>
+
+            <button id="play">Play</button>
+            <button id="stop">Stop</button>
+
+            <button id="start"> &lt;&lt; </button>
+            <button id="prev"> &lt; </button>
+            <button id="next"> &gt; </button>
+            <button id="end"> &gt;&gt; </button>
+            <input type="range" id="volume" min="0" max="1" step="0.05" value="1">
+
+            <button id="mute">Mute</button>
+        </section>
+        <div>
+            <label for="speed">Speed</label>
+            <input type="range" id="Speed" min="1" max="16" step="1" value="1">
+
+        </div>
+
+    </main>
+    <script src="./video.js"></script>
+</body>
+
+</html>
